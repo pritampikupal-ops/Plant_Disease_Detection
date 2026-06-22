@@ -15,7 +15,7 @@ def show_auth_page():
 
     with col2:
 
-        st.title("🌿 AgriDoctor AI")
+        st.title("🌱 AgriDoctor AI")
         st.caption(
             "AI-powered Plant Disease Detection & Community Alerts"
         )
@@ -43,7 +43,7 @@ def show_auth_page():
 
             if st.button(
                 "Login",
-                width="stretch"
+                use_container_width=True
             ):
 
                 try:
@@ -207,7 +207,7 @@ def show_auth_page():
 
             if st.button(
                 "Create Account",
-                width="stretch"
+                use_container_width=True
             ):
 
                 try:
@@ -273,4 +273,3 @@ def show_auth_page():
                         }
                     )
                     st.error(str(e))
-
